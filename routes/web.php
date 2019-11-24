@@ -13,7 +13,7 @@
 
 use App\Post;
 
-Route::get('/', 'SlidersController@index')->name('welcome');
+Route::get('/', 'SlidersController@index')->name('home');
 
 Route::get('/blog', function () {
     $posts = Post::with('category')->get();
