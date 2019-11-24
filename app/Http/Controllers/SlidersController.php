@@ -8,7 +8,8 @@ use App\Slider;
 
 class SlidersController extends Controller
 {
-    public function show()
+
+    public function index()
     {
 
         $posts = Post::with('category')->get();
