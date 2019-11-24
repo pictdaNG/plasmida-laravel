@@ -11,7 +11,6 @@ class SlidersController extends Controller
 
     public function index()
     {
-
         $posts = Post::with('category')->get();
         $sliders = Slider::all();
 
@@ -19,9 +18,7 @@ class SlidersController extends Controller
             $sliders = [];
         }
 
-        return view('welcome', [
-           'sliders' => $sliders,
-            'posts' => $posts
-        ]);
+        return view('welcome')->with(compact('posts'))
+            ->with(compact('sliders'));
     }
 }

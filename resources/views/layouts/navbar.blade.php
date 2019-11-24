@@ -90,7 +90,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="{{ route('home') }}">
                     <img src="{{ Voyager::image( setting('site.logo')) }}" class="logo" alt="Logo">
                     <span class="bold text-uppercase">Plasmida</span>
                 </a>
